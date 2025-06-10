@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clóvis Moura - Wikipedia</title>
+    <style>
+        :root {
+            --main-bg: #f8f9fa;
+            --header-bg: #fff;
+            --sidebar-bg: #f8f9fa;
+            --link-color: #36c;
+            --border-color: #a2a9b1;
+            --text-color: #202122;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: var(--main-bg);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+        
+        .logo {
+            text-align: center;
+            padding: 20px 0;
+        }
+        
+        .logo img {
+            max-width: 200px;
+            height: auto;
+        }
+        
+        .bar {
+            height: 1px;
+            background-color: var(--border-color);
+            margin: 0 auto;
+            width: 95%;
+        }
+        
+        .content {
+            display: grid;
+            grid-template-columns: 200px 1fr 200px;
+            gap: 20px;
+            padding: 20px;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        
+        .sidebar, .anchors {
+            background-color: var(--sidebar-bg);
+            padding: 15px;
+            border-radius: 5px;
+        }
+        
+        .sidebar h2, .anchors h2 {
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+            color: #54595d;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 5px;
+        }
+        
+        .sidebar ul, .anchors ul {
+            list-style: none;
+        }
+        
+        .sidebar li, .anchors li {
+            margin-bottom: 8px;
+        }
+        
+        .sidebar a, .anchors a {
+            color: var(--link-color);
+            text-decoration: none;
+            display: block;
+            padding: 3px 0;
+        }
+        
+        .sidebar a:hover, .anchors a:hover {
+            text-decoration: underline;
+        }
+        
+        .main {
+            background-color: white;
+            padding: 25px;
+            border-radius: 5px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        
+        h1 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid var(--border-color);
+        }
+        
+        h2 {
+            font-size: 1.4rem;
+            margin: 25px 0 15px 0;
+            padding-bottom: 5px;
+            border-bottom: 1px solid var(--border-color);
+        }
+        
+        p {
+            margin-bottom: 15px;
+        }
+        
+        .infobox {
+            float: right;
+            width: 250px;
+            margin: 0 0 20px 20px;
+            padding: 15px;
+            background-color: var(--sidebar-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 5px;
+            font-size: 0.9rem;
+        }
+        
+        .infobox-title {
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        
+        .infobox img {
+            width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+        
+        .infobox table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        
+        .infobox th, .infobox td {
+            padding: 5px;
+            vertical-align: top;
+            border-bottom: 1px solid var(--border-color);
+        }
+        
+        .infobox th {
+            text-align: left;
+            width: 40%;
+        }
+        
+        .footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 0.8rem;
+            color: #54595d;
+        }
+        
+        @media (max-width: 768px) {
+            .content {
+                grid-template-columns: 1fr;
+            }
+            
+            .sidebar, .anchors {
+                order: 2;
+            }
+            
+            .infobox {
+                float: none;
+                width: 100%;
+                margin: 0 0 20px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="logo">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Wikipedia-logo-v2.svg/200px-Wikipedia-logo-v2.svg.png" alt="Wikipedia Logo" width="200"/>
+    </div>
+
+    <div class="bar"></div>
+
+    <div class="content">
+        <div class="sidebar">
+            <h2>Menu</h2>
+            <ul>
+                <li><a href="#">Página Principal</a></li>
+                <li><a href="#">Conteúdo Destacado</a></li>
+                <li><a href="#">Eventos Atuais</a></li>
+                <li><a href="#">Artigo Aleatório</a></li>
+                <li><a href="#">Portal Comunitário</a></li>
+                <li><a href="#">Ajuda</a></li>
+            </ul>
+            
+            <h2>Ferramentas</h2>
+            <ul>
+                <li><a href="#">Páginas Relacionadas</a></li>
+                <li><a href="#">Alterações Recentes</a></li>
+                <li><a href="#">Páginas Especiais</a></li>
+                <li><a href="#">Versão para Impressão</a></li>
+            </ul>
+        </div>
+
+        <div class="main">
+            <h1>Clóvis Moura</h1>
+            
+            <div class="infobox">
+                <div class="infobox-title">Clóvis Moura</div>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Clovis_Moura.jpg/220px-Clovis_Moura.jpg" alt="Clóvis Moura">
+                <table>
+                    <tr>
+                        <th>Nascimento</th>
+                        <td>1925<br>Amarante, Piauí</td>
+                    </tr>
+                    <tr>
+                        <th>Morte</th>
+                        <td>2003 (78 anos)<br>São Paulo, SP</td>
+                    </tr>
+                    <tr>
+                        <th>Nacionalidade</th>
+                        <td>Brasileiro</td>
+                    </tr>
+                    <tr>
+                        <th>Ocupação</th>
+                        <td>Sociólogo, historiador, escritor</td>
+                    </tr>
+                </table>
+            </div>
+            
+            <p><strong>Clóvis Moura</strong> (Amarante, 1925 — São Paulo, 2003) foi um sociólogo, historiador, jornalista e militante do movimento negro brasileiro. É considerado um dos principais estudiosos da escravidão e das relações raciais no Brasil.</p>
+            
+            <h2>Biografia</h2>
+            <p>Nascido no Piauí, mudou-se para São Paulo na década de 1940, onde se formou em Ciências Sociais pela Universidade de São Paulo (USP). Desenvolveu importante trabalho de pesquisa sobre as relações raciais no Brasil, com destaque para seus estudos sobre os quilombos e as revoltas escravas.</p>
+            
+            <h2>Principais Obras</h2>
+            <ul>
+                <li><i>Rebeliões da Senzala</i> (1959)</li>
+                <li><i>O Negro: De Bom Escravo a Mau Cidadão?</i> (1977)</li>
+                <li><i>Dialética Radical do Brasil Negro</i> (1994)</li>
+                <li><i>Sociologia do Negro Brasileiro</i> (1988)</li>
+            </ul>
+            
+            <h2>Contribuições Acadêmicas</h2>
+            <p>Clóvis Moura foi pioneiro na análise marxista da escravidão no Brasil, destacando as formas de resistência dos escravizados. Sua obra <i>Rebeliões da Senzala</i> revolucionou os estudos sobre o período escravocrata, demonstrando que a resistência negra foi constante e organizada.</p>
+        </div>
+
+        <div class="anchors">
+            <h2>Neste Artigo</h2>
+            <ul>
+                <li><a href="#biografia">Biografia</a></li>
+                <li><a href="#obras">Principais Obras</a></li>
+                <li><a href="#contribuicoes">Contribuições Acadêmicas</a></li>
+                <li><a href="#legado">Legado</a></li>
+                <li><a href="#referencias">Referências</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Esta página foi editada pela última vez em 10 de junho de 2025</p>
+        <p>Texto disponível sob a Licença Creative Commons Atribuição-CompartilhaIgual</p>
+    </div>
+</body>
+</html>
