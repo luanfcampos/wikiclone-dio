@@ -7,14 +7,13 @@
     <title>Clóvis Moura - Wikipedia</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="light-theme">
     <header role="banner">
         <div class="logo">
             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Wikipedia-logo-v2.svg/200px-Wikipedia-logo-v2.svg.png" alt="Wikipedia - A enciclopédia livre" width="200">
         </div>
     </header>
 
-    <div class="separator" role="separator" aria-hidden="true"></div>
 
     <div class="content">
         <nav class="sidebar" aria-label="Menu principal">
@@ -42,7 +41,7 @@
                 <h1>Clóvis Moura</h1>
                 
                 <figure class="infobox">
-                    <img src="https://www.politize.com.br/wp-content/uploads/2024/07/16797714672605665.webp" alt="Foto de Clóvis Moura">
+                    <img src="https://mst.org.br/wp-content/uploads/2023/12/image-2-35.jpg" alt="Foto de Clóvis Moura">
                     <figcaption>Clóvis Moura</figcaption>
                     <table>
                         <tr>
@@ -84,19 +83,6 @@
                     <h2 id="contribuicoes-heading">Contribuições Acadêmicas</h2>
                     <p>Clóvis Moura foi pioneiro na análise marxista da escravidão no Brasil, destacando as formas de resistência dos escravizados. Sua obra <i>Rebeliões da Senzala</i> revolucionou os estudos sobre o período escravocrata, demonstrando que a resistência negra foi constante e organizada.</p>
                 </section>
-                
-                <section id="legado" aria-labelledby="legado-heading">
-                    <h2 id="legado-heading">Legado</h2>
-                    <p>Seus trabalhos influenciaram gerações de pesquisadores e ativistas do movimento negro. Atualmente, seu nome é referência em estudos sobre relações raciais e vários centros de pesquisa e instituições levam seu nome.</p>
-                </section>
-                
-                <section id="referencias" aria-labelledby="referencias-heading">
-                    <h2 id="referencias-heading">Referências</h2>
-                    <ol>
-                        <li>MOURA, Clóvis. Rebeliões da Senzala. São Paulo: Anita Garibaldi, 2014.</li>
-                        <li>GONÇALVES, M. A. Clóvis Moura e a Sociologia da Escravidão. São Paulo: Hucitec, 2005.</li>
-                    </ol>
-                </section>
             </article>
         </main>
 
@@ -106,8 +92,6 @@
                 <li><a href="#biografia">Biografia</a></li>
                 <li><a href="#obras">Principais Obras</a></li>
                 <li><a href="#contribuicoes">Contribuições Acadêmicas</a></li>
-                <li><a href="#legado">Legado</a></li>
-                <li><a href="#referencias">Referências</a></li>
             </ul>
         </aside>
     </div>
@@ -116,5 +100,24 @@
         <p>Esta página foi editada pela última vez em 15 de junho de 2023</p>
         <p>Texto disponível sob a Licença Creative Commons Atribuição-CompartilhaIgual</p>
     </footer>
+
+    <button class="theme-toggle" aria-label="Alternar tema">🌓</button>
+
+    <script>
+        //Script para alternar entre tema claro e escuro
+        const themeToggle = document.querySelector('.theme-toggle');
+        
+        themeToggle.addEventListener('click', () => {
+            document.body.classList.toggle('light-theme');
+            const isDark = !document.body.classList.contains('light-theme');
+            localStorage.setItem('theme', isDark ? 'dark' : 'light');
+        });
+        
+        // Verificar preferência do usuário
+        const currentTheme = localStorage.getItem('theme');
+        if (currentTheme === 'light' || (!currentTheme && !prefersDarkScheme.matches)) {
+            document.body.classList.add('light-theme');
+        }
+    </script>
 </body>
 </html>
